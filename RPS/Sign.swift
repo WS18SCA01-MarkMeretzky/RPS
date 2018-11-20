@@ -25,6 +25,8 @@ enum Sign {
     	}
     }
     
+    //self is the user's sign, another is the app's sign.
+    
     func compareTo(_ another: Sign) -> GameState {
         if self == another {
             return .draw;
@@ -33,10 +35,10 @@ enum Sign {
         if self == .rock && another == .paper          //Paper covers rock.
         	|| self == .paper && another == .scissors  //Scissors cuts paper.
         	|| self == .scissors && another == .rock { //Rock smashes scissors.
-            return .lose;
+            return .lose;  //user has lost, app has won
         }
         
-        return .win;
+        return .win;       //user has won, app has lost
     }
 }
 
