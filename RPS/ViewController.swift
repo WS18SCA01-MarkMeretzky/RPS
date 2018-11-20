@@ -63,7 +63,7 @@ class ViewController: UIViewController {
     
     func updateTo(gameState: GameState) {
         gameStatus.text = gameState.string;
-	view.backgroundColor = gameState.color;
+        view.backgroundColor = gameState.color;
         
         if gameState == .start {
             appSign.text = "🤖";
