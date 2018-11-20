@@ -33,8 +33,8 @@ enum Sign {
         }
         
         if self == .rock && another == .paper          //Paper covers rock.
-        	|| self == .paper && another == .scissors  //Scissors cuts paper.
-        	|| self == .scissors && another == .rock { //Rock smashes scissors.
+            || self == .paper && another == .scissors  //Scissors cuts paper.
+            || self == .scissors && another == .rock { //Rock smashes scissors.
             return .lose;  //user has lost, app has won
         }
         
