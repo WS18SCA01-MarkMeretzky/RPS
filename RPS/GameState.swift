@@ -11,8 +11,8 @@ import UIKit; //for UIColor
 
 enum GameState {
     case start;
-    case win;
-    case lose;
+    case win;    //user wins
+    case lose;   //user loses
     case draw;
     
     var string: String {
